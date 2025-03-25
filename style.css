@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Manrope:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Permanent+Marker&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#box{
+    width: 200px;
+    height: 200px;
+    border: 10px solid rgb(221, 220, 220);
+    border-top: 10px solid rgb(129, 129, 243);
+    margin: 100px auto;
+    border-radius: 50%;
+    animation-name: anime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes anime {
+    0%{
+    transform: rotate(0deg);
+    }
+    100%{
+    transform: rotate(360deg);
+    }
+}
+
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+.card{
+    flex-direction: column;
+    gap: 40px;
+    width: 320px;
+    height: 500px;
+    align-content: center;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: roboto;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s;
+    background-color: rgb(211, 211, 211);
+
+}
+.card img{
+    width: 200px;
+    height: 200px;
+}
+#input{
+    width: 300px;
+    height: 40px;
+}
+#select{
+    width: 300px;
+    height: 40px;
+}
+#select{
+    width: 300px;
+    height: 40px;
+}
+.nav{
+    display: flex;
+    gap: 40px;
+    margin: 30px 470px;
+}
+h1{
+    text-align: center;
+    font-family: roboto;
+}
+@media (max-width: 1200px) {
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 30px;
+    } 
+    #input{
+        width: 400px;
+        height: 50px;
+    }
+    #select{
+        width: 400px;
+        height: 50px;
+    }
+    #select2{
+        width: 400px;
+        height: 50px;
+    }
+
+    .nav{
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        margin: 30px 170px; 
+    }
+}
+
+@media (max-width:768px) {
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 30px;
+    } 
+    #input{
+        width: 400px;
+        height: 50px;
+    }
+    #select{
+        width: 400px;
+        height: 50px;
+    }
+    #select2{
+        width: 400px;
+        height: 50px;
+    }
+
+    .nav{
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        margin: 30px 170px; 
+    }
+
+}
+@media (max-width: 575px) {
+    #cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        gap: 60px;
+    } 
+
+    .nav{
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        margin: 30px 80px; 
+    }
+    .card{
+        width: 100%;
+    }
+}
